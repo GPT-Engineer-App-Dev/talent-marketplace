@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Box, Heading, Text, Stack, Input, Button, Grid, Badge, useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, FormControl, FormLabel, Textarea } from "@chakra-ui/react";
+import Footer from "../components/Footer";
 import { FaSearch } from "react-icons/fa";
 
 const developers = [
@@ -46,7 +47,8 @@ const Index = () => {
   };
 
   return (
-    <Box p={8}>
+    <>
+      <Box p={8}>
       <Heading as="h1" size="xl" mb={8}>
         Claude Particles
       </Heading>
@@ -92,6 +94,8 @@ const Index = () => {
         </ModalContent>
       </Modal>
     </Box>
+      <Footer />
+    </>
   );
 };
 
